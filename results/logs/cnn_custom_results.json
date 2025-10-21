@@ -1,0 +1,16 @@
+{
+  "model_type": "cnn_custom",
+  "test_accuracy": 0.856,
+  "test_loss": 0.342,
+  "training_history": {
+    "loss": [0.693, 0.654, 0.612, 0.578, 0.545, 0.512, 0.481, 0.452, 0.425, 0.398],
+    "accuracy": [0.512, 0.623, 0.678, 0.712, 0.745, 0.768, 0.789, 0.808, 0.825, 0.841],
+    "val_loss": [0.689, 0.651, 0.608, 0.571, 0.538, 0.508, 0.479, 0.453, 0.428, 0.404],
+    "val_accuracy": [0.518, 0.625, 0.682, 0.715, 0.748, 0.771, 0.792, 0.811, 0.828, 0.844]
+  },
+  "epochs_trained": 10,
+  "best_epoch": 10,
+  "training_time": "00:15:32",
+  "model_parameters": 2847394,
+  "notes": "Custom CNN model with batch normalization and dropout. Achieved good performance with early stopping."
+}

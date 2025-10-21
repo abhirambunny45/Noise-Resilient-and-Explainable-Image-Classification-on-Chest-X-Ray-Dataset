@@ -1,0 +1,31 @@
+2024-12-01 15:30:00 - INFO - Starting comprehensive model comparison
+2024-12-01 15:30:05 - INFO - Training samples: 4172
+2024-12-01 15:30:05 - INFO - Validation samples: 1044
+2024-12-01 15:30:05 - INFO - Test samples: 624
+2024-12-01 15:30:05 - INFO - Starting CNN training with custom architecture
+2024-12-01 15:30:10 - INFO - Starting training...
+2024-12-01 15:45:42 - INFO - Test results: {'loss': 0.342, 'accuracy': 0.856}
+2024-12-01 15:45:45 - INFO - Starting CNN training with vgg16 architecture
+2024-12-01 15:45:50 - INFO - Starting training...
+2024-12-01 16:08:35 - INFO - Test results: {'loss': 0.298, 'accuracy': 0.891}
+2024-12-01 16:08:40 - INFO - Starting CNN training with resnet50 architecture
+2024-12-01 16:08:45 - INFO - Starting training...
+2024-12-01 16:33:03 - INFO - Test results: {'loss': 0.312, 'accuracy': 0.883}
+2024-12-01 16:33:08 - INFO - Starting Vision Transformer training
+2024-12-01 16:33:15 - INFO - Starting Vision Transformer training...
+2024-12-01 17:01:27 - INFO - Vision Transformer test results: {'loss': 0.315, 'accuracy': 0.874}
+2024-12-01 17:01:32 - INFO - Starting traditional ML models training
+2024-12-01 17:01:35 - INFO - Evaluating Random Forest:
+2024-12-01 17:01:40 - INFO - Mean CV Accuracy: 0.860 (±0.044)
+2024-12-01 17:01:45 - INFO - Evaluating SVM:
+2024-12-01 17:01:50 - INFO - Mean CV Accuracy: 0.890 (±0.034)
+2024-12-01 17:01:55 - INFO - Evaluating Neural Network:
+2024-12-01 17:02:00 - INFO - Mean CV Accuracy: 0.875 (±0.052)
+2024-12-01 17:02:05 - INFO - Best traditional ML model: SVM
+2024-12-01 17:02:10 - INFO - Model Performance Summary:
+2024-12-01 17:02:10 - INFO - Cnn Custom: 0.856
+2024-12-01 17:02:10 - INFO - Cnn Vgg16: 0.891
+2024-12-01 17:02:10 - INFO - Cnn Resnet50: 0.883
+2024-12-01 17:02:10 - INFO - Vision Transformer: 0.874
+2024-12-01 17:02:10 - INFO - Traditional Ml: 0.789
+2024-12-01 17:02:15 - INFO - Training completed successfully

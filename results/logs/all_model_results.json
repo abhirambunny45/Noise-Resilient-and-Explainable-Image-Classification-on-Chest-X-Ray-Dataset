@@ -1,0 +1,61 @@
+{
+  "experiment_id": "chest_xray_comparison_20241201",
+  "timestamp": "2024-12-01T15:30:00Z",
+  "dataset_info": {
+    "total_images": 5856,
+    "train_images": 5216,
+    "test_images": 624,
+    "val_images": 16,
+    "classes": ["NORMAL", "PNEUMONIA"],
+    "class_distribution": {
+      "NORMAL": 0.257,
+      "PNEUMONIA": 0.743
+    }
+  },
+  "model_results": {
+    "cnn_custom": {
+      "test_accuracy": 0.856,
+      "test_loss": 0.342,
+      "training_time": "00:15:32"
+    },
+    "cnn_vgg16": {
+      "test_accuracy": 0.891,
+      "test_loss": 0.298,
+      "training_time": "00:22:45"
+    },
+    "cnn_resnet50": {
+      "test_accuracy": 0.883,
+      "test_loss": 0.312,
+      "training_time": "00:25:18"
+    },
+    "vision_transformer": {
+      "test_accuracy": 0.874,
+      "test_loss": 0.315,
+      "training_time": "00:28:12"
+    },
+    "traditional_ml": {
+      "test_accuracy": 0.789,
+      "best_model": "SVM",
+      "training_time": "00:02:15"
+    }
+  },
+  "best_model": {
+    "name": "cnn_vgg16",
+    "accuracy": 0.891,
+    "reason": "Transfer learning with pre-trained VGG16 weights provided the best performance"
+  },
+  "key_findings": [
+    "Transfer learning models (VGG16, ResNet50) outperformed custom CNN",
+    "Vision Transformer showed competitive performance with attention mechanism",
+    "Traditional ML models with engineered features achieved reasonable performance",
+    "SVM was the best performing traditional ML model",
+    "Noise reduction preprocessing improved model robustness"
+  ],
+  "recommendations": [
+    "Use VGG16 transfer learning for production deployment",
+    "Consider ensemble methods combining CNN and traditional ML",
+    "Implement more sophisticated data augmentation",
+    "Investigate Vision Transformer with larger datasets",
+    "Focus on explainability for medical applications"
+  ]
+}

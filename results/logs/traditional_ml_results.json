@@ -1,0 +1,30 @@
+{
+  "model_type": "traditional_ml",
+  "best_model": "SVM",
+  "cv_results": {
+    "Random Forest": {
+      "cv_scores": [0.85, 0.87, 0.84, 0.86, 0.88],
+      "mean_cv": 0.860,
+      "std_cv": 0.044
+    },
+    "SVM": {
+      "cv_scores": [0.88, 0.90, 0.87, 0.89, 0.91],
+      "mean_cv": 0.890,
+      "std_cv": 0.034
+    },
+    "Neural Network": {
+      "cv_scores": [0.86, 0.88, 0.85, 0.87, 0.89],
+      "mean_cv": 0.875,
+      "std_cv": 0.052
+    }
+  },
+  "feature_names": [
+    "contrast", "dissimilarity", "homogeneity", "energy", "correlation", "ASM",
+    "mean", "std", "variance", "skewness", "kurtosis", "entropy"
+  ],
+  "test_accuracy": 0.789,
+  "test_precision": 0.79,
+  "test_recall": 0.79,
+  "test_f1": 0.79,
+  "notes": "SVM performed best among traditional ML models. Feature engineering with GLCM and statistical features proved effective."
+}
